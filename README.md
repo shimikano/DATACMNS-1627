@@ -7,7 +7,9 @@ Demonstrates that the type of entities with a conflicting `@TypeAlias` my be non
 Run
 
 ```
-./gradlew test
+./gradlew clean test
 ```
 
-a few times. The test should succeed and fail non-deterministically.
+a few times (`clean` is important not to use cached successful test results).
+
+The test should succeed and fail non-deterministically.
